@@ -16,6 +16,14 @@ module.exports = {
         path: './src/images/'
       },
       __key: 'images'
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/docs/`,
+      },
+    },
+    `gatsby-transformer-pdf`,
   ]
 };
