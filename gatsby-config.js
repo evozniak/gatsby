@@ -18,12 +18,13 @@ module.exports = {
       __key: 'images'
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `data`,
-        path: `${__dirname}/src/docs/`,
-      },
+        name: 'data',
+        path: `${__dirname}/src/docs/`
+      }
     },
-    `gatsby-transformer-pdf`,
+    'gatsby-transformer-pdf',
+    'gatsby-transformer-xml'
   ]
 };
